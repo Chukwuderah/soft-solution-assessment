@@ -73,17 +73,46 @@ const SideBar = () => {
             <SidebarItem
               icon={<LayoutGrid size={18} />}
               label="Dashboard"
+              onClick={toggleSidebar}
               active
             />
             <Link href="/profile" passHref>
-              <SidebarItem icon={<User size={18} />} label="My Profile" />
+              <SidebarItem
+                icon={<User size={18} />}
+                label="My Profile"
+                onClick={toggleSidebar}
+              />
             </Link>
-            <SidebarItem icon={<Heart size={18} />} label="Favorites" />
-            <SidebarItem icon={<Users size={18} />} label="My Mutuals" />
-            <SidebarItem icon={<Newspaper size={18} />} label="My Subscribed" />
-            <SidebarItem icon={<Eye size={18} />} label="Interested in me" />
-            <SidebarItem icon={<Settings size={18} />} label="Settings" />
-            <SidebarItem icon={<LogOut size={18} />} label="Logout" />
+            <SidebarItem
+              icon={<Heart size={18} />}
+              label="Favorites"
+              onClick={toggleSidebar}
+            />
+            <SidebarItem
+              icon={<Users size={18} />}
+              label="My Mutuals"
+              onClick={toggleSidebar}
+            />
+            <SidebarItem
+              icon={<Newspaper size={18} />}
+              label="My Subscribed"
+              onClick={toggleSidebar}
+            />
+            <SidebarItem
+              icon={<Eye size={18} />}
+              label="Interested in me"
+              onClick={toggleSidebar}
+            />
+            <SidebarItem
+              icon={<Settings size={18} />}
+              label="Settings"
+              onClick={toggleSidebar}
+            />
+            <SidebarItem
+              icon={<LogOut size={18} />}
+              label="Logout"
+              onClick={toggleSidebar}
+            />
           </div>
         </div>
       </div>
@@ -94,10 +123,12 @@ const SideBar = () => {
 const SidebarItem = ({
   icon,
   label,
+  onClick,
   active = false,
 }: {
   icon: React.ReactNode;
   label: string;
+  onClick: () => void;
   active?: boolean;
 }) => {
   return (
@@ -105,6 +136,7 @@ const SidebarItem = ({
       className={`flex items-center gap-6 px-4 py-2 rounded-md text-sm ${
         active ? "bg-red-500 text-white" : "text-black hover:bg-gray-100"
       }`}
+      onClick={onClick}
     >
       {icon}
       {label}
