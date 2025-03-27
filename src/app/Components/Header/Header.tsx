@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <div className="w-full max-w-full h-[71px] max-h-[71px] bg-white flex items-center justify-between p-7 drop-shadow-[#00000040]">
+    <div className="w-full max-w-full h-[71px] max-h-[71px] bg-white flex items-center justify-between pr-10 md:p-7 drop-shadow-[#00000040]">
       <div className="w-fit max-w-fit flex items-center gap-[25px] border-r-3 border-[#F6F6F6] px-5">
         <Image src={Logo} alt="Logo" />
         <h1 className="text-xl font-normal leading-[100%] JianiPurva">Chuly</h1>
@@ -41,7 +41,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="md:hidden flex items-center gap-2.5">
+      <div className="md:hidden flex items-center gap-4">
         <div className="w-[85px] h-[33px] rounded-[50px] border-[1.5px] border-[#3E7BEA] p-2.5 gap-2.5 flex items-center justify-center">
           <Image src={Search} alt="Search" />
           <p className="text-[#00000099] text-xs font-medium Inter leading-[100%]">

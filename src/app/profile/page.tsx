@@ -253,13 +253,13 @@ export default function ProfilePage() {
         />
         <div className="hidden md:flex absolute top-4 left-4 right-4 justify-between items-center z-10 px-4">
           <Link href="/" passHref>
-            <button className="flex items-center gap-2 text-sm text-gray-100 hover:text-white bg-[#00000081] px-3 py-1 rounded-md">
+            <button className="flex items-center gap-2 text-sm text-gray-100 hover:text-white bg-[#00000081] px-3 py-1 rounded-md cursor-pointer">
               <ArrowLeft size={16} /> Back
             </button>
           </Link>
           <button
             onClick={() => coverInputRef.current?.click()}
-            className="text-sm text-gray-100 hover:text-white bg-[#00000081] px-3 py-1 rounded-md"
+            className="text-sm text-gray-100 hover:text-white bg-[#00000081] px-3 py-1 rounded-md cursor-pointer"
           >
             Update Cover
           </button>

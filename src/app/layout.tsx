@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#F6F6F6] w-full min-w-full min-h-screen">
         <Header />
-        <div className="flex flex-col md:flex-row justify-between gap-4 w-full">
+        <div className="flex flex-col md:flex-row justify-between gap-4 w-full px-1.5 md:px-5">
           <SideBar />
           {children}
         </div>

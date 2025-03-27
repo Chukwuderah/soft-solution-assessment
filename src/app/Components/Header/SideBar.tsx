@@ -22,7 +22,7 @@ const SideBar = () => {
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-[5%] h-full p-4">
+    <div className="w-[5%] h-full p-4 md:mx-auto">
       {/* Hamburger Menu */}
       <button
         onClick={toggleSidebar}
@@ -133,8 +133,8 @@ const SidebarItem = ({
 }) => {
   return (
     <button
-      className={`flex items-center gap-6 px-4 py-2 rounded-md text-sm ${
-        active ? "bg-red-500 text-white" : "text-black hover:bg-gray-100"
+      className={`flex items-center gap-6 px-4 py-2 rounded-md text-sm cursor-pointer ${
+        active ? "bg-red-500 text-white" : "text-black hover:bg-gray-100 w-full"
       }`}
       onClick={onClick}
     >
