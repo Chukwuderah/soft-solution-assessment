@@ -12,7 +12,7 @@ function Header() {
         <Image src={Logo} alt="Logo" />
         <h1 className="text-xl font-normal leading-[100%] JianiPurva">Chuly</h1>
       </div>
-      <div className="w-[80%] flex items-center justify-between gap-5 pr-[89px]">
+      <div className="w-[80%] md:flex items-center justify-between gap-5 pr-[89px] hidden">
         <div className="flex items-center gap-[25px]">
           <div className="w-[202px] max-w-[202px] h-[33px] flex items-center gap-2.5 border-[1.5px] border-[#3E7BEA] rounded-[50px] py-[8px] px-[21px] text-black">
             <Image src={Search} alt="Search" />
@@ -24,7 +24,7 @@ function Header() {
               className="w-full outline-0 border-0"
             />
           </div>
-          <div className="w-[85px] h-[33px] rounded-[50px] border border-[#00000099] p-2.5 gap-2.5 flex items-center justify-center">
+          <div className="w-[85px] h-[33px] rounded-[50px] border-[1.5px] border-[#3E7BEA] p-2.5 gap-2.5 flex items-center justify-center">
             <Image src={Filter} alt="Filter" />
             <p className="text-[#00000099] text-xs font-medium Inter leading-[100%]">
               Filter
@@ -39,6 +39,20 @@ function Header() {
           />
           <Image src={Avatar} alt="Avatar" className="cursor-pointer" />
         </div>
+      </div>
+
+      <div className="md:hidden flex items-center gap-2.5">
+        <div className="w-[85px] h-[33px] rounded-[50px] border border-[#00000099] p-2.5 gap-2.5 flex items-center justify-center">
+          <Image src={Search} alt="Search" />
+          <p className="text-[#00000099] text-xs font-medium Inter leading-[100%]">
+            Ctrl K
+          </p>
+        </div>
+        <Image
+          src={Notification}
+          alt="Notification"
+          className="cursor-pointer"
+        />
       </div>
     </div>
   );

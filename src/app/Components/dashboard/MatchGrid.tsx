@@ -226,7 +226,7 @@ const MatchGrid = () => {
 
   return (
     <div className="min-h-screen mb-10">
-      <div className="max-w-6xl w-full">
+      <div className="w-full">
         {isLoading ? (
           <div className="w-max mx-auto flex justify-between items-center h-64">
             <div className="w-10 h-10 border-4 border-[#EF2424] border-t-transparent rounded-full animate-spin"></div>

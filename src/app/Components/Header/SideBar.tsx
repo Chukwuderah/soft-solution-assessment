@@ -22,7 +22,7 @@ const SideBar = () => {
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed md:absolute top-30 left-10 z-40 h-full">
+    <div className="w-[5%] h-full p-4">
       {/* Hamburger Menu */}
       <button
         onClick={toggleSidebar}

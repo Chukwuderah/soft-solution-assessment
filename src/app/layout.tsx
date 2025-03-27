@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#F6F6F6] w-full min-h-screen md:max-w-[1366px] md:mx-auto">
+      <body className="bg-[#F6F6F6] w-full min-w-full min-h-screen">
         <Header />
-        <div className="flex justify-between w-full">
+        <div className="flex flex-col md:flex-row justify-between gap-4 w-full">
           <SideBar />
           {children}
         </div>

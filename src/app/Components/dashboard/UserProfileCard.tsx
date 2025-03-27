@@ -16,7 +16,7 @@ export default function UserProfileCard({
   onRelationshipTypeChange,
 }: UserProfileCardProps) {
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-4 mb-10 md:max-w-[800px] px-5 md:px-0">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-6 mb-10 md:max-w-[800px] px-5 md:px-0">
       {/* Profile Section */}
       <div className="flex items-center gap-4">
         <div className="w-20 h-20 md:w-[120px] md:h-[120px] rounded-full overflow-hidden">
