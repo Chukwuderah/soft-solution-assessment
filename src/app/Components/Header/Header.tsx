@@ -41,18 +41,10 @@ function Header() {
         </div>
       </div>
 
-      <div className="md:hidden flex items-center gap-4">
-        <div className="w-[85px] h-[33px] rounded-[50px] border-[1.5px] border-[#3E7BEA] p-2.5 gap-2.5 flex items-center justify-center">
-          <Image src={Search} alt="Search" />
-          <p className="text-[#00000099] text-xs font-medium Inter leading-[100%]">
-            Ctrl K
-          </p>
-        </div>
-        <Image
-          src={Notification}
-          alt="Notification"
-          className="cursor-pointer"
-        />
+      <div className="md:hidden w-fit h-[33px] flex items-center justify-center gap-4 border-[1.5px] border-[#3E7BEA] rounded-[50px] px-4 py-2.5">
+        <Image src={Search} alt="Search" className="w-6 h-6" />
+        <Image src={Filter} alt="Filter" className="w-6 h-6" />
+        <Image src={Notification} alt="Notification" className="w-6 h-6" />
       </div>
     </div>
   );
