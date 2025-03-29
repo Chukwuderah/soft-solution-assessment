@@ -7,12 +7,12 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <div className="w-full max-w-full h-[71px] max-h-[71px] bg-white flex items-center justify-between pr-10 md:p-7 drop-shadow-[#00000040]">
+    <div className="w-full max-w-full h-[71px] max-h-[71px] bg-white flex items-center justify-between sm:gap-16 md:gap-8 pr-10 md:p-7 drop-shadow-[#00000040]">
       <div className="w-fit max-w-fit flex items-center gap-[25px] border-r-3 border-[#F6F6F6] px-5">
         <Image src={Logo} alt="Logo" />
         <h1 className="text-xl font-normal leading-[100%] JianiPurva">Chuly</h1>
       </div>
-      <div className="w-[80%] md:flex items-center justify-between gap-5 pr-[89px] hidden">
+      <div className="w-[80%] sm:flex md:flex items-center justify-between gap-5 md:pr-[89px] hidden">
         <div className="flex items-center gap-[25px]">
           <div className="w-[202px] max-w-[202px] h-[33px] flex items-center gap-2.5 border-[1.5px] border-[#3E7BEA] rounded-[50px] py-[8px] px-[21px] text-black">
             <Image src={Search} alt="Search" />
@@ -37,11 +37,11 @@ function Header() {
             alt="Notification"
             className="cursor-pointer"
           />
-          <Image src={Avatar} alt="Avatar" className="cursor-pointer" />
+          <Image src={Avatar} alt="Avatar" className="cursor-pointer sm:w-10 sm:h-10" />
         </div>
       </div>
 
-      <div className="md:hidden w-fit h-[33px] flex items-center justify-center gap-4 border-[1.5px] border-[#3E7BEA] rounded-[50px] px-4 py-2.5">
+      <div className="sm:hidden md:hidden w-fit h-[33px] flex items-center justify-center gap-4 border-[1.5px] border-[#3E7BEA] rounded-[50px] px-4 py-2.5">
         <Image src={Search} alt="Search" className="w-6 h-6" />
         <Image src={Filter} alt="Filter" className="w-6 h-6" />
         <Image src={Notification} alt="Notification" className="w-6 h-6" />
